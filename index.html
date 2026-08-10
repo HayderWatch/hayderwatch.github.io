@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>مزاد حيدر | جميع الروابط الرسمية</title>
+
+  <meta name="description" content="جميع الروابط الرسمية لمزاد حيدر للساعات والأنتيكات في مكان واحد.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --gold: #F5A800;
+      --gold-soft: #FFD66B;
+      --black: #111111;
+      --dark: #1B1B1B;
+      --white: #FFFFFF;
+      --gray: #6F6F6F;
+      --light: #F8F8F8;
+      --border: #E8E8E8;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 85% 5%, rgba(245,168,0,.13), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+      color: var(--black);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 170px;
+      height: 420px;
+      background: linear-gradient(180deg, var(--gold), #ffc847);
+      border-radius: 0 0 0 140px;
+      opacity: .95;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 80px;
+      right: 25px;
+      width: 220px;
+      height: 220px;
+      border: 1px solid rgba(0,0,0,.06);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 28px rgba(0,0,0,.018),
+        0 0 0 55px rgba(0,0,0,.012);
+      z-index: -1;
+    }
+
+    .page {
+      width: min(100% - 28px, 560px);
+      margin: 0 auto;
+      padding: 34px 0 40px;
+    }
+
+    .brand {
+      text-align: center;
+      padding-top: 18px;
+      margin-bottom: 25px;
+    }
+
+    .brand-mark {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+      background: var(--white);
+      border-radius: 27px;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 12px 40px rgba(0,0,0,.11);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .h-logo {
+      width: 62px;
+      height: 62px;
+      position: relative;
+    }
+
+    .h-logo::before,
+    .h-logo::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      width: 15px;
+      border-radius: 2px;
+      background: #111;
+    }
+
+    .h-logo::before {
+      right: 7px;
+    }
+
+    .h-logo::after {
+      left: 7px;
+    }
+
+    .h-center {
+      position: absolute;
+      top: 26px;
+      right: 10px;
+      left: 10px;
+      height: 11px;
+      background: #111;
+    }
+
+    .h-dot {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: var(--gold);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px solid white;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -.7px;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gray);
+    }
+
+    .official {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      color: #755000;
+      background: rgba(245,168,0,.13);
+      border: 1px solid rgba(245,168,0,.28);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 0 auto 25px;
+      max-width: 440px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      color: #777;
+      font-weight: 800;
+      margin: 20px 8px 10px;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      background: rgba(255,255,255,.94);
+      border: 1px solid var(--border);
+      border-radius: 21px;
+      padding: 15px 16px;
+      color: var(--black);
+      box-shadow: 0 7px 24px rgba(0,0,0,.05);
+      transition: .2s ease;
+      min-height: 78px;
+      direction: rtl;
+    }
+
+    .link:active {
+      transform: scale(.985);
+    }
+
+    .link.primary {
+      background: var(--black);
+      color: white;
+      border-color: var(--black);
+    }
+
+    .link.gold {
+      background: linear-gradient(135deg, #ffbd24, #f5a800);
+      color: #111;
+      border: none;
+      box-shadow: 0 10px 30px rgba(245,168,0,.25);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: #F4F4F4;
+      font-size: 21px;
+      font-weight: 900;
+    }
+
+    .primary .icon {
+      background: rgba(255,255,255,.12);
+    }
+
+    .gold .icon {
+      background: rgba(255,255,255,.35);
+    }
+
+    .info {
+      flex: 1;
+      text-align: right;
+    }
+
+    .title {
+      display: block;
+      font-size: 16px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .desc {
+      display: block;
+      color: #777;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .primary .desc {
+      color: #cfcfcf;
+    }
+
+    .gold .desc {
+      color: rgba(0,0,0,.62);
+    }
+
+    .arrow {
+      direction: ltr;
+      font-size: 20px;
+      opacity: .45;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .social-grid .link {
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 8px;
+      padding: 14px 10px;
+    }
+
+    .social-grid .info {
+      flex: initial;
+      text-align: center;
+    }
+
+    .social-grid .icon {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      border-radius: 13px;
+    }
+
+    .social-grid .title {
+      font-size: 14px;
+    }
+
+    .social-grid .desc {
+      font-size: 11px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 8px 10px;
+      color: #888;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .footer-brand {
+      color: #111;
+      font-weight: 900;
+      margin-bottom: 3px;
+    }
+
+    .gold-line {
+      width: 55px;
+      height: 3px;
+      border-radius: 10px;
+      background: var(--gold);
+      margin: 14px auto;
+    }
+
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 27px;
+      }
+
+      .link {
+        padding: 13px;
+      }
+
+      .title {
+        font-size: 15px;
+      }
+
+      .social-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <section class="brand">
+
+      <div class="brand-mark">
+        <div class="h-logo">
+          <span class="h-center"></span>
+          <span class="h-dot"></span>
+        </div>
+      </div>
+
+      <h1>مزاد حيدر</h1>
+
+      <div class="subtitle">
+        للساعات والأنتيكات
+      </div>
+
+      <div class="official">
+        ● الروابط الرسمية
+      </div>
+
+    </section>
+
+    <p class="intro">
+      كل روابط مزاد حيدر الرسمية بمكان واحد.
+      تابع المزادات والعروض، تواصل ويانا، وخليك أول واحد يعرف بالقطع الجديدة.
+    </p>
+
+
+    <div class="section-title">
+      ابدأ من هنا
+    </div>
+
+    <div class="links">
+
+      <a class="link primary"
+         href="https://mazadhaydar.com"
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">🌐</div>
+
+        <div class="info">
+          <span class="title">الموقع الإلكتروني الرسمي</span>
+          <span class="desc">المزادات والعروض وكل تفاصيل مزاد حيدر</span>
+        </div>
+
+        <div class="arrow">←</div>
+      </a>
+
+
+      <a class="link gold"
+         href="https://wa.me/9647710346651"
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">WA</div>
+
+        <div class="info">
+          <span class="title">تواصل ويانا على واتساب</span>
+          <span class="desc">للاستفسار والشراء والتواصل المباشر</span>
+        </div>
+
+        <div class="arrow">←</div>
+      </a>
+
+
+      <a class="link"
+         href="https://whatsapp.com/channel/0029VamUg32LI8YQmlWO5E45"
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">🔔</div>
+
+        <div class="info">
+          <span class="title">تنبيهات المزاد</span>
+          <span class="desc">انضم لقناة واتساب ولا تفوّت المزادات الجديدة</span>
+        </div>
+
+        <div class="arrow">←</div>
+      </a>
+
+    </div>
+
+
+    <div class="section-title">
+      تابعنا على السوشل ميديا
+    </div>
+
+    <div class="social-grid">
+
+      <a class="link"
+         href="https://www.instagram.com/hw_.5?igsh=MWJheXlvNXA1NDhqNQ=="
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">IG</div>
+
+        <div class="info">
+          <span class="title">Instagram</span>
+          <span class="desc">@hw_.5</span>
+        </div>
+      </a>
+
+
+      <a class="link"
+         href="https://www.instagram.com/mazad.haydar?igsh=MXRrN2F4N3p1M3h6YQ=="
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">IG</div>
+
+        <div class="info">
+          <span class="title">Instagram</span>
+          <span class="desc">@mazad.haydar</span>
+        </div>
+      </a>
+
+
+      <a class="link"
+         href="https://www.messenger.com/channel/Hayderwatch"
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">M</div>
+
+        <div class="info">
+          <span class="title">مجتمع المزاد</span>
+          <span class="desc">Messenger</span>
+        </div>
+      </a>
+
+
+      <a class="link"
+         href="https://www.facebook.com/share/1GifCpeZ6d/?mibextid=wwXIfr"
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">f</div>
+
+        <div class="info">
+          <span class="title">بيج مزاد حيدر</span>
+          <span class="desc">Facebook</span>
+        </div>
+      </a>
+
+
+      <a class="link"
+         href="https://www.facebook.com/share/1BdtiSR74t/?mibextid=wwXIfr"
+         target="_blank"
+         rel="noopener">
+
+        <div class="icon">f</div>
+
+        <div class="info">
+          <span class="title">حيدر على فيسبوك</span>
+          <span class="desc">الحساب الشخصي</span>
+        </div>
+      </a>
+
+    </div>
+
+
+    <footer>
+
+      <div class="gold-line"></div>
+
+      <div class="footer-brand">
+        مزاد حيدر للساعات والأنتيكات
+      </div>
+
+      <div>
+        جميع الروابط الموجودة في هذه الصفحة هي روابطنا الرسمية.
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
