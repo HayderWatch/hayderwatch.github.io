@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <title>مزاد حيدر | الروابط الرسمية</title>
 
@@ -20,65 +14,43 @@
   <meta name="theme-color" content="#F5A800">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   >
 
-
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-
     :root {
-
       --yellow: #F5A800;
       --yellow-light: #FFC447;
-
       --black: #111111;
       --text: #171717;
-
       --gray: #707070;
-
       --light: #F6F6F6;
       --border: #E9E9E9;
-
       --white: #FFFFFF;
     }
-
 
     html {
       scroll-behavior: smooth;
     }
 
-
     body {
-
       min-height: 100vh;
-
-      font-family:
-        "Tajawal",
-        Arial,
-        sans-serif;
-
+      font-family: "Tajawal", Arial, sans-serif;
       color: var(--text);
-
       background:
         radial-gradient(
           circle at 95% 4%,
-          rgba(245, 168, 0, .10),
+          rgba(245,168,0,.10),
           transparent 22%
         ),
         linear-gradient(
@@ -86,1626 +58,770 @@
           #FFFFFF 0%,
           #FAFAFA 100%
         );
-
       -webkit-font-smoothing: antialiased;
     }
-
 
     a {
       -webkit-tap-highlight-color: transparent;
     }
 
-
     .page {
-
-      width: min(
-        calc(100% - 24px),
-        560px
-      );
-
+      width: min(calc(100% - 24px), 560px);
       margin: 0 auto;
-
       padding:
         max(18px, env(safe-area-inset-top))
         0
         max(34px, env(safe-area-inset-bottom));
     }
 
-
-
-    /* =========================
-       HERO
-    ========================== */
-
+    /* HERO */
 
     .hero {
-
       position: relative;
       overflow: hidden;
-
       text-align: center;
-
-      padding:
-        18px
-        18px
-        17px;
-
+      padding: 18px 18px 17px;
       background: #FFFFFF;
-
-      border:
-        1px solid
-        rgba(0, 0, 0, .055);
-
+      border: 1px solid rgba(0,0,0,.055);
       border-radius: 28px;
-
-      box-shadow:
-        0 14px 42px
-        rgba(0, 0, 0, .065);
+      box-shadow: 0 14px 42px rgba(0,0,0,.065);
     }
-
 
     .hero::before {
-
       content: "";
-
       position: absolute;
-
       width: 190px;
       height: 190px;
-
       top: -94px;
       right: -82px;
-
       border-radius: 50%;
-
-      border:
-        28px solid
-        rgba(245, 168, 0, .075);
-
+      border: 28px solid rgba(245,168,0,.075);
       box-shadow:
-
-        0 0 0 28px
-        rgba(245, 168, 0, .032),
-
-        0 0 0 56px
-        rgba(245, 168, 0, .016);
+        0 0 0 28px rgba(245,168,0,.032),
+        0 0 0 56px rgba(245,168,0,.016);
     }
-
 
     .hero::after {
-
       content: "";
-
       position: absolute;
-
       right: 0;
       top: 35px;
-
       width: 7px;
       height: 62px;
-
-      border-radius:
-        10px 0 0 10px;
-
-      background:
-        var(--yellow);
+      border-radius: 10px 0 0 10px;
+      background: var(--yellow);
     }
 
-
-
-    /* =========================
-       LOGO
-    ========================== */
-
-
     .logo-wrap {
-
       position: relative;
-
       z-index: 2;
-
       width: 112px;
       height: 112px;
-
-      margin:
-        0 auto 5px;
-
+      margin: 0 auto 5px;
       display: flex;
-
       align-items: center;
       justify-content: center;
     }
 
-
     .logo {
-
       width: 100%;
       height: 100%;
-
       object-fit: contain;
-
       display: block;
     }
 
-
-
-    /* =========================
-       OFFICIAL BADGE
-    ========================== */
-
-
     .official-badge {
-
       position: relative;
-
       z-index: 2;
-
       display: inline-flex;
-
       align-items: center;
-
       gap: 7px;
-
-      padding:
-        7px 13px;
-
+      padding: 7px 13px;
       margin-bottom: 10px;
-
-      border:
-        1px solid
-        rgba(245, 168, 0, .35);
-
+      border: 1px solid rgba(245,168,0,.35);
       border-radius: 999px;
-
-      background:
-        rgba(245, 168, 0, .08);
-
+      background: rgba(245,168,0,.08);
       color: #745000;
-
       font-size: 11px;
-
       font-weight: 800;
     }
 
-
     .official-badge::before {
-
       content: "";
-
       width: 7px;
       height: 7px;
-
       border-radius: 50%;
-
-      background:
-        var(--yellow);
+      background: var(--yellow);
     }
 
-
-
-    /* =========================
-       HERO TEXT
-    ========================== */
-
-
     .hero-text {
-
       position: relative;
-
       z-index: 2;
-
       max-width: 420px;
-
       margin: auto;
-
       color: #5F5F5F;
-
       font-size: 13px;
-
       font-weight: 500;
-
       line-height: 1.85;
     }
 
-
-
-    /* =========================
-       SECTIONS
-    ========================== */
-
+    /* SECTIONS */
 
     .section {
       margin-top: 21px;
     }
 
-
     .section-head {
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
-      padding:
-        0 6px;
-
+      padding: 0 6px;
       margin-bottom: 11px;
     }
 
-
     .section-title {
-
       font-size: 15px;
-
       font-weight: 900;
-
-      color:
-        var(--black);
+      color: var(--black);
     }
-
 
     .section-line {
-
       width: 34px;
-
       height: 3px;
-
       border-radius: 20px;
-
-      background:
-        var(--yellow);
+      background: var(--yellow);
     }
 
-
-
-    /* =========================
-       MAIN LINKS
-    ========================== */
-
+    /* MAIN LINKS */
 
     .links {
-
       display: grid;
-
       gap: 11px;
     }
 
-
     .link-card {
-
       min-height: 80px;
-
       display: flex;
-
       align-items: center;
-
-      padding:
-        13px 14px;
-
+      padding: 13px 14px;
       text-decoration: none;
-
-      color:
-        var(--text);
-
-      background:
-        rgba(255, 255, 255, .97);
-
-      border:
-        1px solid
-        var(--border);
-
+      color: var(--text);
+      background: rgba(255,255,255,.97);
+      border: 1px solid var(--border);
       border-radius: 21px;
-
-      box-shadow:
-        0 7px 22px
-        rgba(0, 0, 0, .04);
-
-      transition:
-        transform .18s ease,
-        box-shadow .18s ease;
+      box-shadow: 0 7px 22px rgba(0,0,0,.04);
+      transition: transform .18s ease;
     }
-
 
     .link-card:active {
       transform: scale(.985);
     }
 
-
     .link-card.black {
-
       color: #FFFFFF;
-
-      background:
-        var(--black);
-
-      border-color:
-        var(--black);
+      background: var(--black);
+      border-color: var(--black);
     }
 
-
     .link-card.yellow {
-
       color: #111111;
-
       background:
         linear-gradient(
           135deg,
           var(--yellow-light),
           var(--yellow)
         );
-
-      border-color:
-        transparent;
-
-      box-shadow:
-        0 11px 28px
-        rgba(245, 168, 0, .20);
+      border-color: transparent;
+      box-shadow: 0 11px 28px rgba(245,168,0,.20);
     }
-
-
-
-    /* =========================
-       MAIN ICONS
-    ========================== */
-
 
     .icon {
-
       width: 49px;
       height: 49px;
-
       min-width: 49px;
-
       margin-left: 12px;
-
       border-radius: 15px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
-      background:
-        var(--light);
+      background: var(--light);
     }
-
 
     .black .icon {
-
-      background:
-        rgba(255, 255, 255, .10);
+      background: rgba(255,255,255,.10);
     }
-
 
     .yellow .icon {
-
-      background:
-        rgba(255, 255, 255, .34);
+      background: rgba(255,255,255,.34);
     }
-
 
     .icon svg,
     .social-icon svg {
-
       width: 26px;
       height: 26px;
     }
 
-
-
-    /* =========================
-       LINK TEXT
-    ========================== */
-
-
     .link-content {
-
       flex: 1;
-
       min-width: 0;
     }
 
-
     .link-title {
-
       display: block;
-
       margin-bottom: 3px;
-
       font-size: 16px;
-
       font-weight: 900;
     }
 
-
     .link-desc {
-
       display: block;
-
       color: #707070;
-
       font-size: 12px;
-
       font-weight: 500;
-
       line-height: 1.5;
     }
 
-
     .black .link-desc {
-
       color: #C6C6C6;
     }
 
-
     .yellow .link-desc {
-
-      color:
-        rgba(0, 0, 0, .64);
+      color: rgba(0,0,0,.64);
     }
 
-
-
-    /* =========================
-       ARROW
-    ========================== */
-
-
     .arrow {
-
       width: 31px;
       height: 31px;
-
       min-width: 31px;
-
       margin-right: 7px;
-
       border-radius: 50%;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       color: #8D8D8D;
-
-      background:
-        rgba(0, 0, 0, .035);
-
+      background: rgba(0,0,0,.035);
       font-size: 18px;
     }
 
-
     .black .arrow {
-
       color: #FFFFFF;
-
-      background:
-        rgba(255, 255, 255, .09);
+      background: rgba(255,255,255,.09);
     }
-
 
     .yellow .arrow {
-
       color: #111111;
-
-      background:
-        rgba(255, 255, 255, .30);
+      background: rgba(255,255,255,.30);
     }
 
-
-
-    /* =========================
-       SOCIAL GRID
-    ========================== */
-
+    /* SOCIAL */
 
     .social-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(
-          2,
-          minmax(0, 1fr)
-        );
-
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 11px;
     }
 
-
     .social-card {
-
       position: relative;
-
       overflow: hidden;
-
       min-height: 128px;
-
-      padding:
-        16px 10px;
-
+      padding: 16px 10px;
       display: flex;
-
       flex-direction: column;
-
       align-items: center;
-
       justify-content: center;
-
       text-decoration: none;
-
       text-align: center;
-
-      color:
-        var(--text);
-
+      color: var(--text);
       background: #FFFFFF;
-
-      border:
-        1px solid
-        var(--border);
-
+      border: 1px solid var(--border);
       border-radius: 22px;
-
-      box-shadow:
-        0 7px 22px
-        rgba(0, 0, 0, .038);
+      box-shadow: 0 7px 22px rgba(0,0,0,.038);
+      transition: transform .18s ease;
     }
 
+    .social-card:active {
+      transform: scale(.98);
+    }
 
     .social-card::after {
-
       content: "";
-
       position: absolute;
-
       width: 68px;
       height: 68px;
-
       left: -32px;
       bottom: -38px;
-
       border-radius: 50%;
-
-      background:
-        rgba(245, 168, 0, .08);
+      background: rgba(245,168,0,.08);
     }
-
 
     .social-icon {
-
       width: 48px;
       height: 48px;
-
       margin-bottom: 8px;
-
       border-radius: 15px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
-      background:
-        #F5F5F5;
+      background: #F5F5F5;
     }
 
-
     .social-name {
-
       font-size: 14px;
-
       font-weight: 900;
     }
 
-
     .social-user {
-
       direction: ltr;
-
       margin-top: 3px;
-
       color: #737373;
-
       font-size: 11px;
-
       font-weight: 600;
     }
 
-
-
-    /* =========================
-       FULL-WIDTH SOCIAL CARD
-    ========================== */
-
-
-    .social-card.full {
-
-      grid-column:
-        1 / -1;
-
-      min-height: 88px;
-
-      flex-direction: row;
-
-      justify-content: flex-start;
-
-      padding:
-        14px 18px;
-
-      text-align: right;
-    }
-
-
-    .social-card.full
-    .social-icon {
-
-      margin:
-        0 0 0 13px;
-
-      min-width: 48px;
-    }
-
-
-    .social-card.full
-    .social-details {
-
-      flex: 1;
-    }
-
-
-    .social-card.full
-    .social-name,
-
-    .social-card.full
-    .social-user {
-
-      display: block;
-
-      text-align: right;
-    }
-
-
-
-    /* =========================
-       FINAL CTA
-    ========================== */
-
+    /* FINAL CTA */
 
     .final-cta {
-
       position: relative;
-
       overflow: hidden;
-
       margin-top: 24px;
-
-      padding:
-        23px 20px;
-
+      padding: 23px 20px;
       text-align: center;
-
       color: #FFFFFF;
-
-      background:
-        var(--black);
-
+      background: var(--black);
       border-radius: 27px;
-
-      box-shadow:
-        0 13px 35px
-        rgba(0, 0, 0, .10);
+      box-shadow: 0 13px 35px rgba(0,0,0,.10);
     }
-
 
     .final-cta::before {
-
       content: "";
-
       position: absolute;
-
       width: 150px;
       height: 150px;
-
       left: -75px;
       top: -80px;
-
       border-radius: 50%;
-
-      background:
-        rgba(245, 168, 0, .12);
+      background: rgba(245,168,0,.12);
     }
 
-
     .cta-small {
-
       position: relative;
-
       z-index: 2;
-
       margin-bottom: 5px;
-
-      color:
-        var(--yellow-light);
-
+      color: var(--yellow-light);
       font-size: 11px;
-
       font-weight: 800;
     }
 
-
     .cta-title {
-
       position: relative;
-
       z-index: 2;
-
       margin-bottom: 7px;
-
       font-size: 20px;
-
       font-weight: 900;
     }
 
-
     .cta-text {
-
       position: relative;
-
       z-index: 2;
-
       max-width: 390px;
-
-      margin:
-        0 auto 15px;
-
+      margin: 0 auto 15px;
       color: #C9C9C9;
-
       font-size: 12px;
-
       line-height: 1.7;
     }
 
-
     .cta-button {
-
       position: relative;
-
       z-index: 2;
-
       min-height: 54px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       gap: 9px;
-
       text-decoration: none;
-
       color: #111111;
-
       background:
         linear-gradient(
           135deg,
           var(--yellow-light),
           var(--yellow)
         );
-
       border-radius: 17px;
-
       font-size: 14px;
-
       font-weight: 900;
     }
 
-
     .cta-button svg {
-
       width: 21px;
-
       height: 21px;
     }
 
-
-
-    /* =========================
-       FOOTER
-    ========================== */
-
+    /* FOOTER */
 
     footer {
-
       margin-top: 22px;
-
-      padding:
-        15px 10px 6px;
-
+      padding: 15px 10px 6px;
       text-align: center;
     }
 
-
     .footer-mark {
-
       width: 42px;
-
       height: 4px;
-
-      margin:
-        0 auto 11px;
-
+      margin: 0 auto 11px;
       border-radius: 20px;
-
-      background:
-        var(--yellow);
+      background: var(--yellow);
     }
 
-
     .footer-title {
-
       margin-bottom: 3px;
-
       font-size: 12px;
-
       font-weight: 900;
     }
 
-
     .footer-text {
-
       color: #7A7A7A;
-
       font-size: 10px;
-
       line-height: 1.6;
     }
 
-
-
-    /* =========================
-       MOBILE
-    ========================== */
-
-
     @media (max-width: 390px) {
-
-
       .page {
-
-        width: min(
-          calc(100% - 18px),
-          560px
-        );
+        width: min(calc(100% - 18px), 560px);
       }
 
-
       .hero {
-
-        padding:
-          17px 15px 16px;
-
+        padding: 17px 15px 16px;
         border-radius: 25px;
       }
 
-
       .logo-wrap {
-
         width: 105px;
-
         height: 105px;
       }
 
-
       .hero-text {
-
         font-size: 12px;
       }
 
-
       .link-title {
-
         font-size: 15px;
       }
 
-
       .link-desc {
-
         font-size: 11px;
       }
 
-
-      .cta-title {
-
-        font-size: 18px;
+      .social-name {
+        font-size: 13px;
       }
 
+      .social-user {
+        font-size: 10px;
+      }
+
+      .cta-title {
+        font-size: 18px;
+      }
     }
-
-
   </style>
-
 </head>
-
 
 <body>
 
-
 <main class="page">
 
-
-
-  <!-- =========================
-       HERO
-  ========================== -->
-
+  <!-- HERO -->
 
   <section class="hero">
 
-
     <div class="logo-wrap">
-
       <img
         class="logo"
         src="41B3BA21-4079-493A-9D83-376625074FED.png"
         alt="مزاد حيدر للساعات والأنتيكات"
       >
-
     </div>
-
 
     <div class="official-badge">
-
       الروابط الرسمية
-
     </div>
 
-
     <p class="hero-text">
-
       كل روابط مزاد حيدر الرسمية بمكان واحد.
       تابع المزادات والعروض، تواصل ويانا،
       وخليك أول واحد يعرف بالقطع الجديدة.
-
     </p>
-
 
   </section>
 
 
-
-  <!-- =========================
-       MAIN LINKS
-  ========================== -->
-
+  <!-- MAIN LINKS -->
 
   <section class="section">
 
-
     <div class="section-head">
-
-
-      <span class="section-title">
-
-        كل روابط مزاد حيدر
-
-      </span>
-
-
+      <span class="section-title">كل روابط مزاد حيدر</span>
       <span class="section-line"></span>
-
-
     </div>
-
-
 
     <div class="links">
 
-
-
       <!-- WEBSITE -->
-
 
       <a
         class="link-card black"
         href="https://mazadhaydar.com"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="زيارة الموقع الإلكتروني الرسمي لمزاد حيدر"
       >
 
-
         <div class="icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-          >
-
-            <circle
-              cx="12"
-              cy="12"
-              r="9"
-            ></circle>
-
-
-            <path
-              d="M3 12h18"
-            ></path>
-
-
-            <path
-              d="M12 3c2.4 2.4 3.7 5.4 3.7 9S14.4 18.6 12 21"
-            ></path>
-
-
-            <path
-              d="M12 3C9.6 5.4 8.3 8.4 8.3 12S9.6 18.6 12 21"
-            ></path>
-
-
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18"></path>
+            <path d="M12 3c2.4 2.4 3.7 5.4 3.7 9S14.4 18.6 12 21"></path>
+            <path d="M12 3C9.6 5.4 8.3 8.4 8.3 12S9.6 18.6 12 21"></path>
           </svg>
-
-
         </div>
-
-
 
         <div class="link-content">
-
-
-          <span class="link-title">
-
-            الموقع الإلكتروني الرسمي
-
-          </span>
-
-
-          <span class="link-desc">
-
-            المزادات والعروض وكل تفاصيل مزاد حيدر
-
-          </span>
-
-
+          <span class="link-title">الموقع الإلكتروني الرسمي</span>
+          <span class="link-desc">المزادات والعروض وكل تفاصيل مزاد حيدر</span>
         </div>
 
-
-
-        <div class="arrow">
-
-          ←
-
-        </div>
-
+        <div class="arrow">←</div>
 
       </a>
 
 
-
       <!-- WHATSAPP CONTACT -->
-
 
       <a
         class="link-card yellow"
         href="https://wa.me/9647710346651"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="التواصل مع مزاد حيدر عبر واتساب"
       >
 
-
         <div class="icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-
-
-            <path
-              d="M12 2a9.6 9.6 0 0 0-8.3 14.4L2 22l5.8-1.6A9.7 9.7 0 1 0 12 2Zm0 17.5a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-3.4.9.9-3.3-.2-.3A7.7 7.7 0 1 1 12 19.5Zm4.2-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-1.3-.7-2.3-1.5-3.2-2.8-.2-.3.2-.4.6-1 .1-.2.1-.3 0-.5L9.5 8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1.2 1.8-1.1 2.9.2 2 1.5 3.8 3.1 5 1.8 1.4 4.6 2.5 6.4 1.4.7-.4 1.2-1 1.4-1.8.1-.4.1-.7 0-.8-.2-.2-1-.6-1.3-.9Z"
-            ></path>
-
-
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a9.6 9.6 0 0 0-8.3 14.4L2 22l5.8-1.6A9.7 9.7 0 1 0 12 2Zm0 17.5a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-3.4.9.9-3.3-.2-.3A7.7 7.7 0 1 1 12 19.5Zm4.2-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-1.3-.7-2.3-1.5-3.2-2.8-.2-.3.2-.4.6-1 .1-.2.1-.3 0-.5L9.5 8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1.2 1.8-1.1 2.9.2 2 1.5 3.8 3.1 5 1.8 1.4 4.6 2.5 6.4 1.4.7-.4 1.2-1 1.4-1.8.1-.4.1-.7 0-.8-.2-.2-1-.6-1.3-.9Z"></path>
           </svg>
-
-
         </div>
-
-
 
         <div class="link-content">
-
-
-          <span class="link-title">
-
-            تواصل ويانا على واتساب
-
-          </span>
-
-
-          <span class="link-desc">
-
-            للاستفسار والشراء والتواصل المباشر
-
-          </span>
-
-
+          <span class="link-title">تواصل ويانا على واتساب</span>
+          <span class="link-desc">للاستفسار والشراء والتواصل المباشر</span>
         </div>
 
-
-
-        <div class="arrow">
-
-          ←
-
-        </div>
-
+        <div class="arrow">←</div>
 
       </a>
 
 
-
       <!-- WHATSAPP CHANNEL -->
-
 
       <a
         class="link-card"
         href="https://whatsapp.com/channel/0029VamUg32LI8YQmlWO5E45"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="الانضمام إلى قناة تنبيهات مزاد حيدر"
       >
 
-
         <div class="icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-          >
-
-
-            <path
-              d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"
-            ></path>
-
-
-            <path
-              d="M10 21h4"
-            ></path>
-
-
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path>
           </svg>
-
-
         </div>
-
-
 
         <div class="link-content">
-
-
-          <span class="link-title">
-
-            تنبيهات المزاد
-
-          </span>
-
-
-          <span class="link-desc">
-
-            انضم للقناة ولا تفوّت المزادات والقطع الجديدة
-
-          </span>
-
-
+          <span class="link-title">تنبيهات المزاد</span>
+          <span class="link-desc">انضم للقناة ولا تفوّت المزادات والقطع الجديدة</span>
         </div>
 
-
-
-        <div class="arrow">
-
-          ←
-
-        </div>
-
+        <div class="arrow">←</div>
 
       </a>
 
-
     </div>
-
 
   </section>
 
 
-
-  <!-- =========================
-       SOCIAL MEDIA
-  ========================== -->
-
+  <!-- SOCIAL MEDIA -->
 
   <section class="section">
 
-
     <div class="section-head">
-
-
-      <span class="section-title">
-
-        تابع مزاد حيدر
-
-      </span>
-
-
+      <span class="section-title">تابع مزاد حيدر</span>
       <span class="section-line"></span>
-
-
     </div>
-
-
 
     <div class="social-grid">
 
-
-
       <!-- INSTAGRAM 1 -->
-
 
       <a
         class="social-card"
         href="https://www.instagram.com/hw_.5?igsh=MWJheXlvNXA1NDhqNQ=="
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="حساب مزاد حيدر على إنستغرام"
       >
 
-
         <div class="social-icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-          >
-
-
-            <rect
-              x="3"
-              y="3"
-              width="18"
-              height="18"
-              rx="5"
-            ></rect>
-
-
-            <circle
-              cx="12"
-              cy="12"
-              r="4"
-            ></circle>
-
-
-            <circle
-              cx="17.3"
-              cy="6.7"
-              r="1"
-            ></circle>
-
-
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="1"></circle>
           </svg>
-
-
         </div>
 
-
-        <span class="social-name">
-
-          Instagram
-
-        </span>
-
-
-        <span class="social-user">
-
-          @hw_.5
-
-        </span>
-
+        <span class="social-name">Instagram</span>
+        <span class="social-user">@hw_.5</span>
 
       </a>
 
 
-
       <!-- INSTAGRAM 2 -->
-
 
       <a
         class="social-card"
         href="https://www.instagram.com/mazad.haydar?igsh=MXRrN2F4N3p1M3h6YQ=="
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="الحساب الثاني لمزاد حيدر على إنستغرام"
       >
 
-
         <div class="social-icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-          >
-
-
-            <rect
-              x="3"
-              y="3"
-              width="18"
-              height="18"
-              rx="5"
-            ></rect>
-
-
-            <circle
-              cx="12"
-              cy="12"
-              r="4"
-            ></circle>
-
-
-            <circle
-              cx="17.3"
-              cy="6.7"
-              r="1"
-            ></circle>
-
-
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="1"></circle>
           </svg>
-
-
         </div>
 
-
-        <span class="social-name">
-
-          Instagram
-
-        </span>
-
-
-        <span class="social-user">
-
-          @mazad.haydar
-
-        </span>
-
+        <span class="social-name">Instagram</span>
+        <span class="social-user">@mazad.haydar</span>
 
       </a>
 
 
+      <!-- TIKTOK -->
 
-      <!-- MESSENGER COMMUNITY -->
+      <a
+        class="social-card"
+        href="https://www.tiktok.com/@mazad_hayder?_r=1&_t=ZS-98lN7xxf2yy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.7 3c.5 2.7 2 4.4 4.3 4.6v3.5c-1.7.1-3.3-.5-4.3-1.2v6.5a6.4 6.4 0 1 1-5.5-6.3v3.6a2.9 2.9 0 1 0 2 2.7V3h3.5Z"></path>
+          </svg>
+        </div>
+
+        <span class="social-name">TikTok</span>
+        <span class="social-user">@mazad_hayder</span>
+
+      </a>
+
+
+      <!-- MESSENGER -->
 
       <a
         class="social-card"
         href="https://www.messenger.com/channel/Hayderwatch"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="مجتمع مزاد حيدر على مسنجر"
       >
 
-
         <div class="social-icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-
-
-            <path
-              d="M12 2C6.5 2 2 6.1 2 11.2c0 2.9 1.5 5.5 3.8 7.2V22l3.4-1.9c.9.2 1.8.3 2.8.3 5.5 0 10-4.1 10-9.2S17.5 2 12 2Zm1 12.4-2.5-2.6-4.9 2.6 5.4-5.7 2.5 2.6 4.9-2.6-5.4 5.7Z"
-            ></path>
-
-
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.5 2 2 6.1 2 11.2c0 2.9 1.5 5.5 3.8 7.2V22l3.4-1.9c.9.2 1.8.3 2.8.3 5.5 0 10-4.1 10-9.2S17.5 2 12 2Zm1 12.4-2.5-2.6-4.9 2.6 5.4-5.7 2.5 2.6 4.9-2.6-5.4 5.7Z"></path>
           </svg>
-
-
         </div>
 
-
-        <span class="social-name">
-
-          مجتمع المزاد
-
-        </span>
-
-
-        <span class="social-user">
-
-          Messenger
-
-        </span>
-
+        <span class="social-name">مجتمع المزاد</span>
+        <span class="social-user">Messenger</span>
 
       </a>
 
 
-
       <!-- FACEBOOK PAGE -->
-
 
       <a
         class="social-card"
         href="https://www.facebook.com/share/1GifCpeZ6d/?mibextid=wwXIfr"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="صفحة مزاد حيدر على فيسبوك"
       >
 
-
         <div class="social-icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-
-
-            <path
-              d="M14 8h3V4.5c-.5-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5V13H5v4h3.5v7H13v-7h3.5l.6-4H13V10c0-1.2.3-2 1-2Z"
-            ></path>
-
-
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14 8h3V4.5c-.5-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5V13H5v4h3.5v7H13v-7h3.5l.6-4H13V10c0-1.2.3-2 1-2Z"></path>
           </svg>
-
-
         </div>
 
-
-        <span class="social-name">
-
-          بيج مزاد حيدر
-
-        </span>
-
-
-        <span class="social-user">
-
-          Facebook
-
-        </span>
-
+        <span class="social-name">بيج مزاد حيدر</span>
+        <span class="social-user">Facebook</span>
 
       </a>
-
 
 
       <!-- PERSONAL FACEBOOK -->
 
-
       <a
-        class="social-card full"
+        class="social-card"
         href="https://www.facebook.com/share/1BdtiSR74t/?mibextid=wwXIfr"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="حساب حيدر الشخصي على فيسبوك"
       >
 
-
         <div class="social-icon">
-
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-
-
-            <path
-              d="M14 8h3V4.5c-.5-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5V13H5v4h3.5v7H13v-7h3.5l.6-4H13V10c0-1.2.3-2 1-2Z"
-            ></path>
-
-
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14 8h3V4.5c-.5-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5V13H5v4h3.5v7H13v-7h3.5l.6-4H13V10c0-1.2.3-2 1-2Z"></path>
           </svg>
-
-
         </div>
 
-
-
-        <div class="social-details">
-
-
-          <span class="social-name">
-
-            حيدر على فيسبوك
-
-          </span>
-
-
-          <span class="social-user">
-
-            الحساب الشخصي
-
-          </span>
-
-
-        </div>
-
+        <span class="social-name">حيدر على فيسبوك</span>
+        <span class="social-user">الحساب الشخصي</span>
 
       </a>
 
-
     </div>
-
 
   </section>
 
 
-
-  <!-- =========================
-       FINAL CTA
-  ========================== -->
-
+  <!-- FINAL CTA -->
 
   <section class="final-cta">
 
-
     <div class="cta-small">
-
       المزاد القادم أقرب مما تتوقع
-
     </div>
-
 
     <div class="cta-title">
-
       لا تفوّت المزاد القادم
-
     </div>
 
-
     <p class="cta-text">
-
       انضم لقناة تنبيهات مزاد حيدر وخليك أول واحد يعرف
       بالمزادات الجديدة والقطع اللي تنعرض.
-
     </p>
-
-
 
     <a
       class="cta-button"
       href="https://whatsapp.com/channel/0029VamUg32LI8YQmlWO5E45"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="الانضمام لتنبيهات مزاد حيدر"
     >
-
 
       <svg
         viewBox="0 0 24 24"
@@ -1713,62 +829,34 @@
         stroke="currentColor"
         stroke-width="2"
       >
-
-
-        <path
-          d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"
-        ></path>
-
-
-        <path
-          d="M10 21h4"
-        ></path>
-
-
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+        <path d="M10 21h4"></path>
       </svg>
-
 
       انضم لتنبيهات المزاد
 
-
     </a>
-
 
   </section>
 
 
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
+  <!-- FOOTER -->
 
   <footer>
 
-
     <div class="footer-mark"></div>
 
-
     <div class="footer-title">
-
       مزاد حيدر للساعات والأنتيكات
-
     </div>
-
 
     <div class="footer-text">
-
       جميع الروابط الموجودة في هذه الصفحة هي روابطنا الرسمية.
-
     </div>
-
 
   </footer>
 
-
 </main>
 
-
 </body>
-
 </html>
