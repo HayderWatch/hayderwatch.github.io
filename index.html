@@ -18,11 +18,12 @@
 
   <meta name="theme-color" content="#F5A800">
 
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@700;800;900&family=Tajawal:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   >
 
@@ -47,8 +48,7 @@
 
       --border: #ECE7DA;
 
-      --shadow:
-        0 12px 34px rgba(0,0,0,.06);
+      --shadow: 0 12px 34px rgba(0,0,0,.06);
     }
 
     html {
@@ -58,10 +58,7 @@
     body {
       min-height: 100vh;
 
-      font-family:
-        "Tajawal",
-        Arial,
-        sans-serif;
+      font-family: "Tajawal", Arial, sans-serif;
 
       color: var(--black);
 
@@ -90,7 +87,6 @@
 
     .page {
       width: min(calc(100% - 20px), 590px);
-
       margin: 0 auto;
 
       padding:
@@ -114,9 +110,7 @@
 
       background: #FFFFFF;
 
-      border:
-        1px solid
-        rgba(245,168,0,.16);
+      border: 1px solid rgba(245,168,0,.16);
 
       border-radius: 30px;
 
@@ -136,9 +130,7 @@
 
       border-radius: 50%;
 
-      border:
-        30px solid
-        rgba(245,168,0,.07);
+      border: 30px solid rgba(245,168,0,.07);
 
       box-shadow:
         0 0 0 30px rgba(245,168,0,.03),
@@ -189,6 +181,7 @@
       z-index: 2;
 
       display: inline-flex;
+
       align-items: center;
 
       gap: 7px;
@@ -197,14 +190,11 @@
 
       padding: 8px 15px;
 
-      border:
-        1px solid
-        rgba(245,168,0,.40);
+      border: 1px solid rgba(245,168,0,.40);
 
       border-radius: 100px;
 
-      background:
-        rgba(245,168,0,.08);
+      background: rgba(245,168,0,.08);
 
       color: #745000;
 
@@ -250,7 +240,9 @@
 
     .section-head {
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
 
       gap: 14px;
@@ -281,6 +273,7 @@
 
     .main-links {
       display: grid;
+
       gap: 11px;
     }
 
@@ -291,6 +284,7 @@
       min-height: 88px;
 
       display: flex;
+
       align-items: center;
 
       padding: 15px;
@@ -306,11 +300,9 @@
       border-radius: 23px;
 
       box-shadow:
-        0 8px 24px
-        rgba(0,0,0,.04);
+        0 8px 24px rgba(0,0,0,.04);
 
-      transition:
-        transform .2s ease;
+      transition: transform .2s ease;
     }
 
     .main-card:active {
@@ -330,8 +322,7 @@
 
       border-radius: 50%;
 
-      background:
-        rgba(245,168,0,.07);
+      background: rgba(245,168,0,.07);
     }
 
     .main-card.yellow {
@@ -345,8 +336,7 @@
       border-color: transparent;
 
       box-shadow:
-        0 12px 30px
-        rgba(245,168,0,.18);
+        0 12px 30px rgba(245,168,0,.18);
     }
 
     .main-icon {
@@ -363,15 +353,16 @@
       border-radius: 17px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       background: #F6F6F6;
     }
 
     .yellow .main-icon {
-      background:
-        rgba(255,255,255,.38);
+      background: rgba(255,255,255,.38);
     }
 
     .main-icon svg {
@@ -409,8 +400,7 @@
     }
 
     .yellow .main-desc {
-      color:
-        rgba(0,0,0,.64);
+      color: rgba(0,0,0,.64);
     }
 
     .arrow {
@@ -425,7 +415,9 @@
       margin-right: 8px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       border-radius: 50%;
@@ -440,8 +432,7 @@
     .yellow .arrow {
       color: #111111;
 
-      background:
-        rgba(255,255,255,.35);
+      background: rgba(255,255,255,.35);
     }
 
 
@@ -453,10 +444,7 @@
       display: grid;
 
       grid-template-columns:
-        repeat(
-          2,
-          minmax(0,1fr)
-        );
+        repeat(2, minmax(0,1fr));
 
       gap: 11px;
     }
@@ -470,9 +458,11 @@
       padding: 16px 10px;
 
       display: flex;
+
       flex-direction: column;
 
       align-items: center;
+
       justify-content: center;
 
       text-align: center;
@@ -488,11 +478,9 @@
       border-radius: 23px;
 
       box-shadow:
-        0 8px 24px
-        rgba(0,0,0,.04);
+        0 8px 24px rgba(0,0,0,.04);
 
-      transition:
-        transform .2s ease;
+      transition: transform .2s ease;
     }
 
     .social-card:active {
@@ -512,8 +500,7 @@
 
       border-radius: 50%;
 
-      background:
-        rgba(245,168,0,.08);
+      background: rgba(245,168,0,.08);
     }
 
     .social-card.wide {
@@ -542,7 +529,9 @@
       margin-bottom: 9px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       border-radius: 16px;
@@ -551,8 +540,7 @@
     }
 
     .wide .social-icon {
-      margin:
-        0 0 0 14px;
+      margin: 0 0 0 14px;
     }
 
     .social-icon svg {
@@ -620,9 +608,7 @@
           #FFFFFF
         );
 
-      border:
-        1px solid
-        rgba(245,168,0,.22);
+      border: 1px solid rgba(245,168,0,.22);
 
       border-radius: 26px;
     }
@@ -636,11 +622,13 @@
 
     .trust-list {
       display: grid;
+
       gap: 12px;
     }
 
     .trust-item {
       display: flex;
+
       align-items: center;
 
       gap: 10px;
@@ -660,7 +648,9 @@
       min-width: 31px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       border-radius: 50%;
@@ -678,30 +668,27 @@
     ========================= */
 
     .testimonials {
-      margin-top: 29px;
+      margin-top: 30px;
     }
 
     .testimonial-head {
       text-align: center;
 
-      margin-bottom: 17px;
+      margin-bottom: 18px;
     }
 
     .testimonial-badge {
       display: inline-block;
 
-      margin-bottom: 9px;
+      margin-bottom: 10px;
 
       padding: 7px 14px;
 
-      border:
-        1px solid
-        rgba(245,168,0,.30);
+      border: 1px solid rgba(245,168,0,.30);
 
       border-radius: 100px;
 
-      background:
-        var(--yellow-soft);
+      background: var(--yellow-soft);
 
       color: #946200;
 
@@ -709,11 +696,33 @@
       font-weight: 800;
     }
 
-    .testimonial-title {
-      margin-bottom: 6px;
+    /*
+       هذا العنوان فقط نستخدم بيه Noto Kufi Arabic
+       حتى حرف چ يظهر بصورة صحيحة
+    */
 
-      font-size: 24px;
-      font-weight: 900;
+    .testimonial-title {
+      direction: rtl;
+
+      unicode-bidi: plaintext;
+
+      margin: 0 0 8px;
+
+      font-family:
+        "Noto Kufi Arabic",
+        "Tajawal",
+        Arial,
+        sans-serif;
+
+      font-size: 22px;
+
+      font-weight: 800;
+
+      line-height: 1.65;
+
+      letter-spacing: 0;
+
+      text-align: center;
     }
 
     .testimonial-subtitle {
@@ -740,20 +749,15 @@
       overflow-x: auto;
 
       padding:
-        4px 2px
-        12px;
+        4px 2px 12px;
 
-      scroll-snap-type:
-        x mandatory;
+      scroll-snap-type: x mandatory;
 
-      scroll-behavior:
-        smooth;
+      scroll-behavior: smooth;
 
-      -webkit-overflow-scrolling:
-        touch;
+      -webkit-overflow-scrolling: touch;
 
-      scrollbar-width:
-        none;
+      scrollbar-width: none;
     }
 
     .testimonials-slider::-webkit-scrollbar {
@@ -761,31 +765,27 @@
     }
 
     .testimonial-card {
-      flex:
-        0 0 92%;
+      flex: 0 0 92%;
 
-      scroll-snap-align:
-        center;
+      scroll-snap-align: center;
 
       overflow: hidden;
 
       background: #FFFFFF;
 
-      border:
-        1px solid
-        rgba(245,168,0,.22);
+      border: 1px solid rgba(245,168,0,.22);
 
       border-radius: 26px;
 
       box-shadow:
-        0 12px 34px
-        rgba(0,0,0,.07);
+        0 12px 34px rgba(0,0,0,.07);
     }
 
     .testimonial-card img {
       display: block;
 
       width: 100%;
+
       height: auto;
 
       background: #FFFFFF;
@@ -793,12 +793,14 @@
 
     .slider-controls {
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       gap: 10px;
 
-      margin-top: 7px;
+      margin-top: 8px;
     }
 
     .slider-btn {
@@ -810,7 +812,9 @@
       border-radius: 50%;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       cursor: pointer;
@@ -820,15 +824,16 @@
       color: #111111;
 
       font-size: 20px;
+
       font-weight: 900;
 
       box-shadow:
-        0 7px 16px
-        rgba(245,168,0,.18);
+        0 7px 16px rgba(245,168,0,.18);
     }
 
     .slider-dots {
       display: flex;
+
       align-items: center;
 
       gap: 6px;
@@ -842,8 +847,7 @@
 
       background: #DCDCDC;
 
-      transition:
-        all .2s ease;
+      transition: all .2s ease;
     }
 
     .slider-dot.active {
@@ -859,9 +863,10 @@
 
     .final-cta {
       position: relative;
+
       overflow: hidden;
 
-      margin-top: 29px;
+      margin-top: 30px;
 
       padding: 27px 20px;
 
@@ -869,9 +874,7 @@
 
       background: #FFF9E8;
 
-      border:
-        1px solid
-        rgba(245,168,0,.23);
+      border: 1px solid rgba(245,168,0,.23);
 
       border-radius: 29px;
 
@@ -891,8 +894,7 @@
 
       border-radius: 50%;
 
-      background:
-        rgba(245,168,0,.10);
+      background: rgba(245,168,0,.10);
     }
 
     .cta-small {
@@ -923,8 +925,7 @@
 
       max-width: 420px;
 
-      margin:
-        0 auto 16px;
+      margin: 0 auto 16px;
 
       color: #686868;
 
@@ -940,7 +941,9 @@
       min-height: 58px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       gap: 10px;
@@ -964,8 +967,7 @@
       font-weight: 900;
 
       box-shadow:
-        0 11px 25px
-        rgba(245,168,0,.20);
+        0 11px 25px rgba(245,168,0,.20);
     }
 
     .cta-button svg {
@@ -980,8 +982,7 @@
 
     footer {
       padding:
-        28px 12px
-        8px;
+        28px 12px 8px;
 
       text-align: center;
     }
@@ -990,8 +991,7 @@
       width: 44px;
       height: 4px;
 
-      margin:
-        0 auto 11px;
+      margin: 0 auto 11px;
 
       border-radius: 20px;
 
@@ -1021,8 +1021,7 @@
     @media (max-width: 390px) {
 
       .page {
-        width:
-          calc(100% - 16px);
+        width: calc(100% - 16px);
       }
 
       .hero {
@@ -1051,7 +1050,8 @@
       }
 
       .testimonial-title {
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.7;
       }
 
       .testimonial-card {
@@ -1086,11 +1086,9 @@
 
     </div>
 
-
     <div class="official-badge">
       الروابط الرسمية
     </div>
-
 
     <p class="hero-text">
       كل روابط مزاد حيدر بمكان واحد.
@@ -1283,7 +1281,7 @@
 
 
   <!-- =========================
-       SOCIAL
+       SOCIAL MEDIA
   ========================= -->
 
   <section class="section">
@@ -1678,7 +1676,7 @@
 
 
   <!-- =========================
-       REVIEWS
+       CUSTOMER REVIEWS
   ========================= -->
 
   <section
@@ -1694,9 +1692,7 @@
       </span>
 
 
-      <h2 class="testimonial-title">
-        ثقة عملائنا تحچي عنا
-      </h2>
+      <h2 class="testimonial-title">ثقة عملائنا تحچي عنا</h2>
 
 
       <p class="testimonial-subtitle">
@@ -1962,14 +1958,10 @@
 
     currentIndex = index;
 
-    const card = cards[index];
-
-    slider.scrollTo({
-      left:
-        card.offsetLeft -
-        (slider.clientWidth - card.clientWidth) / 2,
-
-      behavior: "smooth"
+    cards[index].scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center"
     });
 
     updateDots(currentIndex);
@@ -2014,34 +2006,43 @@
         setTimeout(
           () => {
 
-            const center =
-              slider.scrollLeft +
-              slider.clientWidth / 2;
+            let nearestIndex = 0;
 
-            let closestIndex = 0;
-            let closestDistance = Infinity;
+            let nearestDistance = Infinity;
+
+            const sliderRect =
+              slider.getBoundingClientRect();
+
+            const sliderCenter =
+              sliderRect.left +
+              sliderRect.width / 2;
+
 
             cards.forEach(
               (card, index) => {
 
-                const cardCenter =
-                  card.offsetLeft +
-                  card.clientWidth / 2;
+                const rect =
+                  card.getBoundingClientRect();
+
+                const center =
+                  rect.left +
+                  rect.width / 2;
 
                 const distance =
                   Math.abs(
-                    cardCenter - center
+                    center -
+                    sliderCenter
                   );
 
                 if (
                   distance <
-                  closestDistance
+                  nearestDistance
                 ) {
 
-                  closestDistance =
+                  nearestDistance =
                     distance;
 
-                  closestIndex =
+                  nearestIndex =
                     index;
 
                 }
@@ -2049,8 +2050,9 @@
               }
             );
 
+
             currentIndex =
-              closestIndex;
+              nearestIndex;
 
             updateDots(
               currentIndex
@@ -2081,7 +2083,7 @@
 
 
   /*
-    إجبار Safari على تحميل صور الآراء مسبقاً
+     Preload reviews
   */
 
   const reviewImages = [
@@ -2104,8 +2106,7 @@
   reviewImages.forEach(
     (src) => {
 
-      const image =
-        new Image();
+      const image = new Image();
 
       image.src = src;
 
